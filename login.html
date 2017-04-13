@@ -1,6 +1,30 @@
+<style type="text/css">
+ body {
+ 	background-color: #00ff5e;
+ 	color: white;
+ 	font-family: 'Roboto', sans-serif;
+
+ }
+	form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 12%;
+		font-size: 1.2em;
+	}
+	form p {
+		font-weight: bold;
+		font-size: 2em;
+	}
+	button {
+		margin-top: 10px;
+	}
+</style>
 <div ng-controller="loginCtrl">
 	<form action="/" id="myLogin">
-		Username: <input type="text" name="username" id="username" ng-model="username"><br>
+		<p>Angular Login App</p>
+		Username: <input type="text" name="username" id="username" ng-model="username">
 		Password: <input type="password" name="password" id="password" ng-model="password">
 		<button type="button" ng-click="submit()">Login</button>
 	</form>

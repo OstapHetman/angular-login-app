@@ -10,14 +10,10 @@ app.config(function($routeProvider)
 		resolve: {
 			"check": function($location, $rootScope) {
 				if(!$rootScope.loggenIn) {
-					$location.path('');
-				}
-				else {
-					templateUrl:'dashboard.html';
-				}
+					$location.path('/');
+				}	
 			}
 		},
-
 			templateUrl: 'dashboard.html'
 	})
 	.otherwise ({
